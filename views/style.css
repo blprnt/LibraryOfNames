@@ -1,0 +1,36 @@
+h1 {
+    color: red;
+    font-family: 'Playfair Display', serif;
+}
+
+h2, h3 {
+    color: grey;
+    font-family: 'Playfair Display', serif;
+}
+
+.topPage {
+  margin-top:100px;
+  width:700px;
+}
+
+.bottomPage {
+  position:absolute;
+  top:650px;
+  left:25px;
+  width:1280px;
+}
+
+#year {
+  position:absolute;
+  top:188px;
+  left:610px;
+  width:1280px;
+}
+
+canvas {
+  display:fixed;
+}
+
+.p5 {
+  top:300px;
+}
