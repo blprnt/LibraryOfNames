@@ -8,7 +8,8 @@
     <meta name="description" content="p5.js on Glitch">
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -26,11 +27,14 @@
       
       
       <h2 id="firstGraph">
-        If you were to pull 40 books from the shelves of the Library of Congress that were published in ____, these might be the authors' first names:
+        <div>
+          Let's you and I walk through the endless stacks of the Library, collecting books. We'll pick out <span id="num">16,568</span> of them published in or around <span id="yearText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>. Let's put them in one big pile, and then we'll close our eyes and choose forty of them. Now let's write down the names of their authors:
+        </div>
+       
       </h2>
       <div>
         <div id ="year" class="dropdown">
-        <button id="yearDrop" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1775
+        <button style="z-index:-1; padding:0; background-color:rgba(255,255,255,0);; color:#666666; font-size:26pt; border:none; box-shadow:none" id="yearDrop" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1775
         <span class="caret"></span></button>
         <ul id = "yearDropList" class="dropdown-menu">
           
@@ -45,16 +49,21 @@
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div> 
       
     <div class="bottomPage">
-    <h3 id="lastGraph">
-       Data for this piece comes from the Library's MARC records, which you can access here. Full source code used to parse the records is available here, and the data used in this piece specifically is available by clicking the Glitch icon at the top right of the page.
-    </h3>
-    <h3>
+      <h2 >
+        Who are these people? Can you picture their faces? Do you know how they spoke, how they dressed, how they thought?
+      </h2>
+    <h2>
       <div>
         Sincerely,
       </div>
       <div>
+        <br>
         Jer
       </div>
+    </h2>
+      
+      <h3 id="lastGraph">
+       Data for this piece comes from the Library's MARC records, which you can access <a href="https://www.loc.gov/cds/products/marcDist.php">here</a>. Full source code used to parse the records is available <a href="https://github.com/blprnt/loc/tree/master/experiments/marc">here</a>, and the data used in this piece specifically is available by clicking the Glitch icon at the top right of the page.
     </h3>
     </div>
       
